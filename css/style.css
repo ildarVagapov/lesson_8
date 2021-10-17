@@ -1,0 +1,412 @@
+/* 
+&display=swap
+&subset=cyrillic-ext 
+*/
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html,
+body {
+	height: 100%;
+}
+html {
+	font-size: 16px; /* по умолчанию */
+}
+body {
+	line-height: 1;
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+/* ------------------------------ */
+
+.wrapper {
+	background-color: cadetblue;
+	padding: 30px;
+}
+
+.link {
+	border: 1px solid #000;
+	font-size: 30px;
+	margin: 0 10px 0 0;
+}
+
+.link:hover {
+	color: blue;
+	font-size: 20px;
+	font-weight: 900;
+}
+
+.link:visited {
+	color: chocolate;
+}
+
+.link:focus {
+	color: darkblue;
+}
+
+.link__1:focus {
+	color: darkblue;
+}
+
+.link__2 {
+	color: #fff;
+	padding: 30px 40px;
+	font-size: 16px;
+	background-color: darkgoldenrod;
+	border-radius: 5px;
+	box-shadow: darkgreen 1px 7px 0px 0px;
+	position: relative;
+	top: 0;
+}
+
+.link__2:hover {
+	background-color: darkorange;
+}
+
+.link__2:active {
+	box-shadow: darkgreen 1px 3px;
+	top: 4px;
+}
+
+.block__1 {
+	margin: 50px;
+	background-color: darkslateblue;
+	padding: 20px;
+}
+
+.block__1 li {
+	margin: 0 0 30px 0;
+	font-size: 26px;
+}
+
+.block__1 li:first-child {
+	color: red;
+}
+.block__1 li:last-child {
+	margin-bottom: 0px;
+	color: saddlebrown;
+}
+
+.block__1 li:hover:last-child {
+	color: salmon;
+	cursor: pointer;
+}
+
+.block__1 p:first-of-type {
+	background-color: chartreuse;
+	margin: 0 0 30px 0;
+	padding: 30px;
+}
+
+.block__1 ul:nth-child(1) {
+	background-color: cornsilk;
+	margin-bottom: 39px;
+}
+
+.block__1 :nth-child(6) {
+	background-color: darkblue;
+	margin: 0 0 30px 0;
+	display: block;
+}
+
+.block__1 ul:nth-child(3):hover {
+	background-color: darkorchid;
+	margin: 0 0 30px 0;
+}
+.block__1 ul:nth-child(3) {
+	margin: 0 0 20px 0;
+}
+
+.block__1 p:nth-child(5) {
+	background-color: darkred;
+	padding: 30px;
+	margin: 0 0 30px 0;
+}
+
+.list__1 :nth-child(4) {
+	font-size: 50px;
+}
+
+.block__1 p:last-of-type {
+	font-size: 30px;
+}
+
+.block__1 p:nth-child(4) {
+	background-color: deeppink;
+}
+
+.block__1 ul:nth-child(3) {
+	background-color: deepskyblue;
+}
+
+.block__1 ul:last-of-type {
+	border: 3px solid #000;
+}
+
+.block__text {
+	background-color: burlywood;
+	max-width: 1210px;
+	margin: 0 auto 50px;
+	padding: 20px;
+}
+
+.block__text *:not(:last-child) {
+	margin-bottom: 50px;
+}
+
+.block__text p {
+	max-width: 600px;
+	margin: 0 auto;
+}
+
+.block__text ul {
+	width: 600px;
+	background-color: aqua;
+	margin: 0 auto;
+}
+
+.block__text p:nth-child(2)::first-line {
+	font-size: 30px;
+	color: #fff;
+}
+
+.block__text p:last-child::first-letter {
+	color: aqua;
+	font-size: 30px;
+}
+
+.block__text p:nth-child(3)::after {
+	content: "";
+	width: 100px;
+	height: 2px;
+	display: block;
+	background-color: brown;
+	margin: 15px 0 0 0;
+}
+
+.block__text p:hover:nth-child(3)::after {
+	content: "";
+	width: 150px;
+	height: 2px;
+	display: block;
+	background-color: #98ff;
+	margin: 15px 0 0 0;
+}
+
+.block__text p:nth-child(3)::before {
+	content: "";
+	width: 150px;
+	height: 2px;
+	display: block;
+	background-color: #98ff;
+	margin: 0 0 15px 0;
+}
+
+.block__list {
+	max-width: 1250px;
+	background-color: aquamarine;
+	padding: 100px 30px;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+.block__list li:not(:last-child) {
+	margin: 0 0 30px 0;
+}
+
+.block__list ul {
+	width: 700px;
+	margin: 0 auto;
+	border: 2px solid #000;
+	padding: 10px 50px 10px 300px;
+	font-size: 17px;
+	font-family: "arial";
+	font-weight: 700;
+	background-color: chocolate;
+	overflow: hidden;
+}
+
+.block__list li::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #98ff;
+	margin: 0px 10px -4px 0;
+}
+
+.block__list li:hover::before {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	margin: 0px 10px -4px 0;
+}
+
+.block__list li:hover::after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #98ff;
+	margin: 0px 0px -4px 10px;
+}
+
+.block__list li:after {
+	content: "";
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: red;
+	margin: 0px 0px -4px 10px;
+}
+
+.block__list {
+	margin-bottom: 30px;
+}
+
+/* домашка */
+
+.doggie {
+	max-width: 1100px;
+	margin: 0 auto 50px;
+	overflow: hidden;
+	padding: 10px;
+	background-color: #f5f5f5;
+	border-radius: 10px;
+}
+.content {
+	margin-left: 10px;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+}
+.subtitle {
+	color: #5d62b5;
+	font-size: 11px;
+	font-weight: 700;
+	line-height: 20px;
+	letter-spacing: 2.5px;
+	padding-left: 23px;
+	margin-bottom: 33px;
+	background: url("../img/icons/icon.png") -5px -4px no-repeat;
+}
+
+.title {
+	font-size: 36px;
+	font-weight: 900;
+	margin-bottom: 72px;
+}
+.item {
+}
+
+.items:not(:last-child) {
+	margin-right: 30px;
+}
+.items__1 {
+	max-width: 330px;
+	display: inline-block;
+	background: url("../img/icons/dog_love_24x.png") 0 0 no-repeat;
+	padding: 5px 5px 5px 90px;
+}
+.items__title {
+	font-size: 19px;
+	font-weight: 900;
+	line-height: 26px;
+	color: #f2726f;
+}
+.items__text {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 24px;
+	color: #4b4b4b;
+}
+.items__2 {
+	max-width: 330px;
+	display: inline-block;
+	background: url("../img/icons/dog_vet_24x.png") 0 0 no-repeat;
+	padding: 5px 5px 5px 90px;
+}
+.items__3 {
+	max-width: 330px;
+	display: inline-block;
+	background: url("../img/icons/dog_stream_24x.png") 0 0 no-repeat;
+	padding: 5px 5px 5px 90px;
+}
+
+/* домашка 2 */
+
+.choose {
+	overflow: hidden;
+	max-width: 260px;
+	margin: 0 auto;
+}
+.choose__content {
+	background-color: #252525;
+	max-width: 260px;
+	padding: 24px 24px 60px 24px;
+	border-radius: 5px;
+}
+.choose__title {
+	font-family: sans-serif;
+	letter-spacing: -0.275px;
+	font-size: 22px;
+	font-weight: 100;
+	line-height: 26px;
+	color: #ffffff;
+	margin-bottom: 20px;
+}
+
+.choose__title::after {
+	content: "";
+	display: block;
+	height: 2px;
+	width: 56px;
+	background-color: #34c759;
+	margin: 13px 0 0 0;
+}
+
+.choose__text {
+	font-family: sans-serif;
+	font-style: normal;
+	font-size: 13px;
+	line-height: 18px;
+	letter-spacing: -0.1625px;
+	color: rgba(255, 255, 255, 0.5);
+}
